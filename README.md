@@ -20,14 +20,15 @@ Sigue estos pasos para crear la página web utilizando Docker y Nginx:
 6. Verifica en tu navegador que la página web esté funcionando correctamente.
 
 
+## Pasos detallados
+
 Instalar Docker en tu sistema: Antes de comenzar, debes tener Docker instalado en tu computadora. Puedes descargar Docker desde el sitio web oficial: https://www.docker.com/products/docker-desktop
 
 Crear un directorio para la página web: Crea un directorio en tu computadora para almacenar los archivos de tu página web.
 
 Crear un archivo HTML: Crea un archivo HTML simple con el contenido de tu página web. Por ejemplo, puedes usar el siguiente código:
 
-php
-Copy code
+
 <html>
   <head>
     <title>Mi página web</title>
@@ -36,9 +37,13 @@ Copy code
     <h1>Bienvenido a mi página web</h1>
   </body>
 </html>
+
+
 Crear un archivo Dockerfile: Crea un archivo Dockerfile en el directorio de tu página web. Este archivo define la imagen de Docker que se usará para ejecutar tu página web. Aquí está un ejemplo de Dockerfile:
 css
 Copy code
+
+
 # Utilizar la imagen de Nginx como base
 FROM nginx
 
@@ -54,6 +59,8 @@ docker run -d -p 80:80 mi-pagina-web
 Verificar la página web: Abre un navegador web y accede a http://localhost para verificar si la página web se está ejecutando correctamente.
 Con estos pasos, deberías tener una página web funcionando en Docker con Nginx. Puedes personalizar la página web agregando más archivos HTML o CSS y reconstruyendo la imagen de Docker.
 
+
+# Cuando hago cambios en el html
 
 Si realizaste un cambio en el archivo index.html, debes volver a construir la imagen de Docker para que el contenedor de Docker use la versión actualizada del archivo HTML.
 
