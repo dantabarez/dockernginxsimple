@@ -40,22 +40,25 @@ Crear un archivo HTML: Crea un archivo HTML simple con el contenido de tu págin
 
 
 Crear un archivo Dockerfile: Crea un archivo Dockerfile en el directorio de tu página web. Este archivo define la imagen de Docker que se usará para ejecutar tu página web. Aquí está un ejemplo de Dockerfile:
-css
-Copy code
+
 
 
 # Utilizar la imagen de Nginx como base
 FROM nginx
-
 # Copiar el archivo HTML a la imagen de Docker
 COPY index.html /usr/share/nginx/html
+
+
+
+
 Construir la imagen de Docker: Abre una terminal en el directorio de tu página web y ejecuta el siguiente comando para construir la imagen de Docker:
-Copy code
+
 docker build -t mi-pagina-web .
+
 Ejecutar un contenedor de Docker: Ejecuta un contenedor de Docker a partir de la imagen recién construida con el siguiente comando:
-css
-Copy code
+
 docker run -d -p 80:80 mi-pagina-web
+
 Verificar la página web: Abre un navegador web y accede a http://localhost para verificar si la página web se está ejecutando correctamente.
 Con estos pasos, deberías tener una página web funcionando en Docker con Nginx. Puedes personalizar la página web agregando más archivos HTML o CSS y reconstruyendo la imagen de Docker.
 
