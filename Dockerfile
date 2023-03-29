@@ -1,8 +1,8 @@
-# Utilizar la imagen de Nginx como base
-FROM nginx
+# Utilizar la imagen base de Apache
+FROM httpd:latest
 
-# Copiar el archivo HTML a la imagen de Docker
-COPY index.html /usr/share/nginx/html
-COPY style.css /usr/share/nginx/html
-
+# Copiar los archivos de la aplicación al directorio /usr/local/apache2/htdocs/
+COPY index.html /usr/local/apache2/htdocs/
+COPY style.css /usr/local/apache2/htdocs/
+COPY img3.jpg /usr/local/apache2/htdocs/
 
