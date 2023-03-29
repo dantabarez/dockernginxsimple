@@ -3,4 +3,6 @@ FROM nginx
 
 # Copiar el archivo HTML a la imagen de Docker
 COPY index.html /usr/share/nginx/html
+COPY style.css /usr/share/nginx/html
+
 
