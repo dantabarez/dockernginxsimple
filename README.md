@@ -41,9 +41,6 @@ Crear un archivo HTML: Crea un archivo HTML simple con el contenido de tu págin
 
 Crear un archivo Dockerfile: Crea un archivo Dockerfile en el directorio de tu página web. Este archivo define la imagen de Docker que se usará para ejecutar tu página web. Aquí está un ejemplo de Dockerfile:
 
-
-
-# Crea archivo Dockerfile con el contenido siguiente
 ```dockerfile
 FROM nginx
 COPY index.html /usr/share/nginx/html
