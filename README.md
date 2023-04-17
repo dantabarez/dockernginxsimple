@@ -43,13 +43,11 @@ Crear un archivo Dockerfile: Crea un archivo Dockerfile en el directorio de tu p
 
 
 
-# Utilizar la imagen de Nginx como base
+# Crea archivo Dockerfile con el contenido siguiente
+```dockerfile
 FROM nginx
-# Copiar el archivo HTML a la imagen de Docker
 COPY index.html /usr/share/nginx/html
-
-
-
+```
 
 Construir la imagen de Docker: Abre una terminal en el directorio de tu página web y ejecuta el siguiente comando para construir la imagen de Docker:
 
